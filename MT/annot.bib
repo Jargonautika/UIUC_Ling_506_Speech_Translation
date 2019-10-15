@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+% YUPIK NMT CITATIONS %
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Multilingual NMT for 6k sentence corpora
+@article{gu2018universal,
+  title={Universal neural machine translation for extremely low resource languages},
+  author={Gu, Jiatao and Hassan, Hany and Devlin, Jacob and Li, Victor OK},
+  journal={arXiv preprint arXiv:1802.05368},
+  year={2018},
+  annote={
+    Gu et al. developed two approaches shown to provide improvements in NMT evaluations using multi-lingual corpora. Their first approach is the use of a Universal Lexical Representation, an vector embedding produced by combinding the embedding spaces from each language together, applying the appropriate transformations so the embeddings are aligned. The second approach is to add an "expert" to the neural network topology to select which language data to use when producing a translation. Their experimentation shows that this Mixture of Language Experts (MoLE) does switch between languages during translations. The authors find that there are significant gains in BLEU scores for languages limited to small corpora when the trained languages are related: BLEU scores of 23 for Romanian-English translation using romance language data, whereas translation into Korean using Romance languages only achieves a BLEU score of 6. Gu et al. find that adding back-translation is also helpful for low-resource settings.
+    }
+}
+%% Sennrich on low resource NMT
+@article{sennrich2019revisiting,
+  title={Revisiting Low-Resource Neural Machine Translation: A Case Study},
+  author={Sennrich, Rico and Zhang, Biao},
+  journal={arXiv preprint arXiv:1905.11901},
+  year={2019},
+  annote={
+    Sennrich argues that decent quality low-resource NMT is possible without large auxiliary datasets or multi-lingual datasets, given that the appropriate hyperparameters for low-resource settings are used, and addtional training strategies are used. Sennrich compares an RNN NMT system developed by Koehn and Knowles to a BiDeep RNN NMT system with label smoothing, dropout, word-dropout, layer normalization, and tied-embeddings. Sennrich also optimizes the BiDeep model with hyperparameters tuned to low-resource settings. Sennrich tests the two models on English-German and English-Korean datasets, using corpora of varying sizes. Sennrich finds that the BiDeep model outperforms the baseline model, particularly when corpora are smaller than 1 million sub-words (~20,000 sentences). In the ablation study, word-level dropout was found to have the largest effect (+3.4 BLEU), and models trained with hyperparameter tuning outperformed all other models in low-resource settings. Performance increases were found for both English-German and English-Korean. Sennrich lists the other hyperparameters in the paper's appendix.
+  }
+}
+%% Micher's PhD thesis proposal (Inuit MT)
+@techreport{micher2018addressing,
+  title={Addressing Challenges of Machine Translation of Inuit Languages},
+  author={Micher, Jeffrey C},
+  year={2018},
+  institution={US Army Research Laboratory Adelphi United States},
+  annote={
+    In this thesis proposal, Micher outlines the aspects of the Inuit languages, Inuktitut in particular, which cause difficulties in the development of translation systems. These difficulties include sparse and irregular training data, complex morphophonology, and high degrees of morphological productivity. Micher hypothesizes that using linguistically motivated "deep" morphological analyses which account for morphophonological transformations will result in increased translation accuracy when compared to the use of character level , BPE, or whole word models. In the preliminary research, Micher finds that BPE produces the most accurate translations for Inuktitut-English (30 BLEU). Micher aims to comprehensively study the effects of segmentation choice on translation quality, which will be evaluated through whole-word BLEU scores, and morpheme level (m-BLEU) scores.
+  }
+}
+%% Transfer learning for low resource NMT
+@article{zoph2016transfer,
+  title={Transfer learning for low-resource neural machine translation},
+  author={Zoph, Barret and Yuret, Deniz and May, Jonathan and Knight, Kevin},
+  journal={arXiv preprint arXiv:1604.02201},
+  year={2016},
+  annote={
+    Zoph et al. apply a transfer learning strategy to improve translation quality for low resource NMT. They experiment by training a parent French-English model with 300 million tokens, and using these parameters to train a child model (for Hausa, Turkish, Urdu and Uzbek to English), are significantly smaller corpora. Zoph et al. find that training a child model using parent model parameters is able to improve translation results over using the child model data alone, and find that when the parent and child source languages are related, further improvements in translation scores are observed. Zoph et al. explore which parameters to copy from the parent to child model, and find that freezing the target embeddings, and randomly assigning the source embeddings to the new source language provide the best performance. The authors find that transfer learning makes NMT competitive with statistical based MT methods, which typically outperform NMT systems in low resource settings.
+  }
+}
+%% Out-of-domain parallel data for Low-resource MT
+@article{imankulova2019exploiting,
+  title={Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation},
+  author={Imankulova, Aizhan and Dabre, Raj and Fujita, Atsushi and Imamura, Kenji},
+  journal={arXiv preprint arXiv:1907.03060},
+  year={2019},
+  annote={
+    Imankulova address the issue of low-resource NMT using out-of-domain data, noting that domain specific data adds further challenges to low-resource NMT, particularly because the domains in low-resource settings are often very limited. Imankulova propose a multilingual transfer learning approach to translate news from Japanese to Russian. Imankulova et al. propose a three step process for out-of-domain NMT: first, a multilingual model is trained on out of domain data for high-resource languages, namely Japanese to English and Russian to English data from other domains. Secondly, the multilingual model is fine-tuned on in domain data for the high-resource pairs (i.e. news for Russian-English and Japanese-English). Finally, the model is fine-tuned again on a small corpus of in-domain data (i.e. Japanese-Russian). The authors found that using all three of  these steps resulted in increased performance in translation when compared to just using in-domain data or just using data for the particular language pair. They also explore several neural network architectures, and find that a multi2multi transformer architecture performed the best. Finally, they find that multiple iterations of backtranslation can further improve results using their transfer learning method.
+  }
+}
+%% OpenNMT citation
+@article{klein2017opennmt,
+  title={Opennmt: Open-source toolkit for neural machine translation},
+  author={Klein, Guillaume and Kim, Yoon and Deng, Yuntian and Senellart, Jean and Rush, Alexander M},
+  journal={arXiv preprint arXiv:1701.02810},
+  year={2017},
+  annote={
+    OpenNMT is an open-source neural machine translation system, designed to encapsulate the neural network architecture common to all NMT tasks. It is capable of achieving state of the art performance using RNN and Transformer architectures. ONMT allows model hyperparameters to be easily customized through the command-line arguments, and may further be customized through a comprehensive and well-documented API.
+  }
+}
+%% Sennrich BPE
+@article{sennrich2015neural,
+  title={Neural machine translation of rare words with subword units},
+  author={Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  journal={arXiv preprint arXiv:1508.07909},
+  year={2015},
+  annote={
+    Sennrich developed the BPE tokenization approach to solve the problem of translating out-of-vocabulary (OOV) words. Sennrich notes, using a selection of low-frequency words, that OOV words are commonly morphologically complex, or proper names which can be translated through regular orthographic transformations. Sennrich suggests tokenizing NMT training data using sub-word units derived using the Byte-Pair-Encoding data compression algorithm, which works by iteratively joining the most common sub-words together until a certain vocabulary size is reached. Sennrich finds that using BPE for NMT increases the accuracy of unigram-level translation for rare words, and increases in overall translation quality (+1.1 - 1.3 BLEU).
+  }
+}
+%% Comparing RNN and Transformers for multilingual NMT
+@article{lakew2018comparison,
+  title={A comparison of transformer and recurrent neural networks on multilingual neural machine translation},
+  author={Lakew, Surafel M and Cettolo, Mauro and Federico, Marcello},
+  journal={arXiv preprint arXiv:1806.06957},
+  year={2018},
+  annote={
+    Lakew et al. aim to evaluate NMT systems in three respects: how bilingual models compare to multilingual models, how RNN models compare to Transformer models, and how language similarities affect multilingual translation quality. Translation equality is evaluated through BLEU and TER scores, and lexical, morphological and word-order errors were determined by human post-editors. Lakew et al. found that multilingual models outperform bilingual models on all error types (lexical, morphological and word error)/ They also find that the transformer outperforms RNNs for multilingual models, and that transformers work better than RNNs when performing zero-shot translation. Finally, they find that related languages are beneficial to multilingual models, but related languages in bilingual models and zero-shot models do not significantly increase performance.
+  }
+}
+%% Attention is all you need
+@inproceedings{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle={Advances in neural information processing systems},
+  pages={5998--6008},
+  year={2017},
+  annote={
+    Vaswani et al. present the Transformer, a neural network architecture for machine translation which does not require any recurrent architecture, and only relies on the attention mechanism. This architecture avoids the vanishing gradient issues found in RNN architectures, while also being easier to parallelize. The transformer is an encoder-decoder model, where the encoder contains multiple layers of multi-headed attention, followed by a FFN, and a normalization layer. These attention heads allow different attention patters to be learned by the model in parallel. The authors find improvements in German-English and French-English translation tasks with less training resources than the other best models.
+  }
+}
+
+%% Energy and Policy Considerations for Deep Learning in NLP
+
+@article{strubell2019energy,
+  title={Energy and Policy Considerations for Deep Learning in NLP},
+  author={Strubell, Emma and Ganesh, Ananya and McCallum, Andrew},
+  journal={arXiv preprint arXiv:1906.02243},
+  year={2019}
+}
+
+%% Sennrich back-translation
+
+@article{sennrich2015improving,
+  title={Improving neural machine translation models with monolingual data},
+  author={Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  journal={arXiv preprint arXiv:1511.06709},
+  year={2015}
+}
