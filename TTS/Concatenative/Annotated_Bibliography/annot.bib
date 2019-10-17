@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%%%%%
+% Text to Speech Synthesis for Low-Resource Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{bansal2018pre,
+  title={Pre-training on high-resource speech recognition improves low-resource speech-to-text translation},
+  author={Bansal, Sameer and Kamper, Herman and Livescu, Karen and Lopez, Adam and Goldwater, Sharon},
+  journal={arXiv preprint arXiv:1809.01431},
+  year={2018},
+  annote    = {The authors of this paper investigate direct speech-to-text translation 
+  				  when the source language islow-resource. They first modelled  ~300 
+  				  hours of high-resource English ASR data and then applied transfer 
+  				  learning approaches to fine-tune those model parameters for the 
+  				  low-resource language at hand. They use BLEU machine translation 
+  				  scores to quantify the end-to-end system results. Much of this study 
+  				  focuses on the pre-training of the ASR encoder and how it yields the
+  				  greatest improvement to the system as a whole.}
+}
+
+%How to fine-tune this large model?
+@article{wang2017tacotron,
+  title={Tacotron: Towards end-to-end speech synthesis},
+  author={Wang, Yuxuan and Skerry-Ryan, RJ and Stanton, Daisy and Wu, Yonghui and Weiss, Ron J and Jaitly, Navdeep and Yang, Zongheng and Xiao, Ying and Chen, Zhifeng and Bengio, Samy and others},
+  journal={arXiv preprint arXiv:1703.10135},
+  year={2017},
+  annote    = {This paper presents a concatenative synthesizer that achieves SOTA
+                      metrics on a number of tasks. Importantly the authors outline the Subjective
+                      5-scale mean opinion score (MOS) which is an industry standard for detailing
+                      naturalness in speech. Interestingly the encoder-decoder framework focuses
+                      on translating text into a spectrogram which can then be interpreted into a 
+                      waveform instead of the other way around. No hand-engineered HMM aligner
+                      is required to make this work.}
+}
+
