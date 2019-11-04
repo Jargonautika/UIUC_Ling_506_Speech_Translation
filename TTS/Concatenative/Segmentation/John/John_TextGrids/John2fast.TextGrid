@@ -1,0 +1,190 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 174.08176870748298 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "bell" 
+        xmin = 0 
+        xmax = 174.08176870748298 
+        intervals: size = 44 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.15387755102040818 
+            text = "Bad audio" 
+        intervals [2]:
+            xmin = 0.15387755102040818 
+            xmax = 4.9315192743764165 
+            text = "" 
+        intervals [3]:
+            xmin = 4.9315192743764165 
+            xmax = 6.556553287981859 
+            text = " " 
+        intervals [4]:
+            xmin = 6.556553287981859 
+            xmax = 10.224263038548752 
+            text = "" 
+        intervals [5]:
+            xmin = 10.224263038548752 
+            xmax = 13.564625850340136 
+            text = "" 
+        intervals [6]:
+            xmin = 13.564625850340136 
+            xmax = 17.728843537414967 
+            text = "" 
+        intervals [7]:
+            xmin = 17.728843537414967 
+            xmax = 21.62031746031746 
+            text = "" 
+        intervals [8]:
+            xmin = 21.62031746031746 
+            xmax = 24.46049886621315 
+            text = "" 
+        intervals [9]:
+            xmin = 24.46049886621315 
+            xmax = 25.184444444444445 
+            text = "" 
+        intervals [10]:
+            xmin = 25.184444444444445 
+            xmax = 26.791746031746033 
+            text = "" 
+        intervals [11]:
+            xmin = 26.791746031746033 
+            xmax = 27.60467120181406 
+            text = "" 
+        intervals [12]:
+            xmin = 27.60467120181406 
+            xmax = 31.64108843537415 
+            text = "" 
+        intervals [13]:
+            xmin = 31.64108843537415 
+            xmax = 36.41614512471656 
+            text = "" 
+        intervals [14]:
+            xmin = 36.41614512471656 
+            xmax = 42.0730612244898 
+            text = "" 
+        intervals [15]:
+            xmin = 42.0730612244898 
+            xmax = 44.40648526077098 
+            text = "" 
+        intervals [16]:
+            xmin = 44.40648526077098 
+            xmax = 46.35972789115647 
+            text = "" 
+        intervals [17]:
+            xmin = 46.35972789115647 
+            xmax = 50.40897959183674 
+            text = "" 
+        intervals [18]:
+            xmin = 50.40897959183674 
+            xmax = 53.939164191281606 
+            text = "" 
+        intervals [19]:
+            xmin = 53.939164191281606 
+            xmax = 62.12507936507937 
+            text = "" 
+        intervals [20]:
+            xmin = 62.12507936507937 
+            xmax = 65.60733248857693 
+            text = "" 
+        intervals [21]:
+            xmin = 65.60733248857693 
+            xmax = 69.95260770975057 
+            text = "" 
+        intervals [22]:
+            xmin = 69.95260770975057 
+            xmax = 74.50167800453515 
+            text = "" 
+        intervals [23]:
+            xmin = 74.50167800453515 
+            xmax = 77.71841269841269 
+            text = "" 
+        intervals [24]:
+            xmin = 77.71841269841269 
+            xmax = 84.83133786848073 
+            text = "" 
+        intervals [25]:
+            xmin = 84.83133786848073 
+            xmax = 86.9085234499184 
+            text = "No transcription" 
+        intervals [26]:
+            xmin = 86.9085234499184 
+            xmax = 91.44802721088435 
+            text = "" 
+        intervals [27]:
+            xmin = 91.44802721088435 
+            xmax = 94.98934240362812 
+            text = "Bad Audio" 
+        intervals [28]:
+            xmin = 94.98934240362812 
+            xmax = 98.2875283446712 
+            text = "Bad Audio" 
+        intervals [29]:
+            xmin = 98.2875283446712 
+            xmax = 103.76698412698413 
+            text = "Bad Audio" 
+        intervals [30]:
+            xmin = 103.76698412698413 
+            xmax = 108.00748299319727 
+            text = "Bad Audio" 
+        intervals [31]:
+            xmin = 108.00748299319727 
+            xmax = 111.70780045351474 
+            text = "" 
+        intervals [32]:
+            xmin = 111.70780045351474 
+            xmax = 114.02807256235828 
+            text = "" 
+        intervals [33]:
+            xmin = 114.02807256235828 
+            xmax = 119.99197278911565 
+            text = "" 
+        intervals [34]:
+            xmin = 119.99197278911565 
+            xmax = 124.56666666666666 
+            text = "Bad Audio" 
+        intervals [35]:
+            xmin = 124.56666666666666 
+            xmax = 128.47607056136314 
+            text = "" 
+        intervals [36]:
+            xmin = 128.47607056136314 
+            xmax = 132.98599464401252 
+            text = "" 
+        intervals [37]:
+            xmin = 132.98599464401252 
+            xmax = 136.9773696145125 
+            text = "" 
+        intervals [38]:
+            xmin = 136.9773696145125 
+            xmax = 140.886485260771 
+            text = "Bad transcription" 
+        intervals [39]:
+            xmin = 140.886485260771 
+            xmax = 144.1774149659864 
+            text = "" 
+        intervals [40]:
+            xmin = 144.1774149659864 
+            xmax = 154.43043083900227 
+            text = "" 
+        intervals [41]:
+            xmin = 154.43043083900227 
+            xmax = 158.0096575853575 
+            text = "No transcription" 
+        intervals [42]:
+            xmin = 158.0096575853575 
+            xmax = 165.85691609977326 
+            text = "" 
+        intervals [43]:
+            xmin = 165.85691609977326 
+            xmax = 167.682358276644 
+            text = "" 
+        intervals [44]:
+            xmin = 167.682358276644 
+            xmax = 174.08176870748298 
+            text = "" 
